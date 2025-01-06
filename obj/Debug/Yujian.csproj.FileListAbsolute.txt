@@ -1,0 +1,17 @@
+E:\GitHub Items\Yujian\bin\Debug\配置文件\ASP.txt
+E:\GitHub Items\Yujian\bin\Debug\配置文件\ASPX.txt
+E:\GitHub Items\Yujian\bin\Debug\配置文件\DIR.txt
+E:\GitHub Items\Yujian\bin\Debug\配置文件\JSP.txt
+E:\GitHub Items\Yujian\bin\Debug\配置文件\MDB.txt
+E:\GitHub Items\Yujian\bin\Debug\配置文件\PHP.txt
+E:\GitHub Items\Yujian\bin\Debug\Yujian.exe.config
+E:\GitHub Items\Yujian\bin\Debug\Yujian.exe
+E:\GitHub Items\Yujian\bin\Debug\Yujian.pdb
+E:\GitHub Items\Yujian\obj\Debug\Yujian.csproj.AssemblyReference.cache
+E:\GitHub Items\Yujian\obj\Debug\Yujian.MainForm.resources
+E:\GitHub Items\Yujian\obj\Debug\Yujian.Properties.Resources.resources
+E:\GitHub Items\Yujian\obj\Debug\Yujian.csproj.GenerateResource.cache
+E:\GitHub Items\Yujian\obj\Debug\Yujian.csproj.CoreCompileInputs.cache
+E:\GitHub Items\Yujian\obj\Debug\Yujian.exe
+E:\GitHub Items\Yujian\obj\Debug\Yujian.pdb
+E:\GitHub Items\Yujian\bin\Debug\配置文件\CUSTOM.txt

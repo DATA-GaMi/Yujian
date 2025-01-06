@@ -77,6 +77,9 @@ namespace Yujian
             PHP_box.Text = PHP_box.Text + " " + ReadFile_ToRow(@"配置文件\PHP.txt").ToString();
             //读取JSP.txt行数
             JSP_box.Text = JSP_box.Text + " " + ReadFile_ToRow(@"配置文件\JSP.txt").ToString();
+
+            //读取自定义字典CUSTOM.txt行数
+            custom_dic.Text = custom_dic.Text + " " + ReadFile_ToRow(@"配置文件\CUSTOM.txt").ToString();
         }
 
 
@@ -87,6 +90,7 @@ namespace Yujian
             if(textBox1.Text.Length == 0)
             {
                 MessageBox.Show("请输入网站域名!", "提示", MessageBoxButtons.OK);
+                return;
             }
             else
             {
@@ -95,16 +99,30 @@ namespace Yujian
             if (Scan_Thread.Text.Length == 0)
             {
                 MessageBox.Show("请选择线程!", "提示", MessageBoxButtons.OK);
+                return;
             }
             if(Scan_Timeout.Text.Length==0)
             {
                 MessageBox.Show("请设置超时!", "提示", MessageBoxButtons.OK);
+                return;
             }
 
             if(status200.Checked)
             {
                 //使用HEAD方法请求网站
+                //将结果输出在DataGridView上,包含ID，url地址，以及HTTP状态码
             }
+            if(status403.Checked)
+            {
+                //使用HEAD方法请求网站
+                //将结果输出在DataGridView上,包含ID，url地址，以及HTTP状态码
+            }
+            if (status3xx.Checked)
+            {
+                //使用HEAD方法请求网站
+                //将结果输出在DataGridView上,包含ID，url地址，以及HTTP状态码
+            }
+            MessageBox.Show("开始运行");
             
         }
 
@@ -171,6 +189,11 @@ namespace Yujian
             }
 
             return result;
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

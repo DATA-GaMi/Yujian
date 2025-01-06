@@ -90,6 +90,9 @@
     <Content Include="配置文件\ASPX.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="配置文件\CUSTOM.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="配置文件\DIR.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

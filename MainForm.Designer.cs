@@ -42,6 +42,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HTTP_STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.status3xx = new System.Windows.Forms.CheckBox();
@@ -64,10 +68,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HTTP_STATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.custom_dic = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -167,6 +168,49 @@
             this.dataGridView1.Size = new System.Drawing.Size(1078, 487);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            // 
+            // ID
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ID.FillWeight = 44.85837F;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Address
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Address.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Address.FillWeight = 291.5779F;
+            this.Address.HeaderText = "地址";
+            this.Address.MinimumWidth = 8;
+            this.Address.Name = "Address";
+            this.Address.ReadOnly = true;
+            this.Address.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // HTTP_STATUS
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.HTTP_STATUS.DefaultCellStyle = dataGridViewCellStyle5;
+            this.HTTP_STATUS.FillWeight = 45.45454F;
+            this.HTTP_STATUS.HeaderText = "HTTP响应";
+            this.HTTP_STATUS.MaxInputLength = 4;
+            this.HTTP_STATUS.MinimumWidth = 8;
+            this.HTTP_STATUS.Name = "HTTP_STATUS";
+            this.HTTP_STATUS.ReadOnly = true;
+            this.HTTP_STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 18.10924F;
+            this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // label6
             // 
@@ -181,6 +225,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.custom_dic);
             this.groupBox1.Controls.Add(this.status3xx);
             this.groupBox1.Controls.Add(this.status403);
             this.groupBox1.Controls.Add(this.status200);
@@ -209,7 +254,7 @@
             // status3xx
             // 
             this.status3xx.AutoSize = true;
-            this.status3xx.Location = new System.Drawing.Point(891, 118);
+            this.status3xx.Location = new System.Drawing.Point(942, 118);
             this.status3xx.Name = "status3xx";
             this.status3xx.Size = new System.Drawing.Size(97, 22);
             this.status3xx.TabIndex = 17;
@@ -219,7 +264,7 @@
             // status403
             // 
             this.status403.AutoSize = true;
-            this.status403.Location = new System.Drawing.Point(891, 90);
+            this.status403.Location = new System.Drawing.Point(942, 90);
             this.status403.Name = "status403";
             this.status403.Size = new System.Drawing.Size(97, 22);
             this.status403.TabIndex = 16;
@@ -231,7 +276,7 @@
             this.status200.AutoSize = true;
             this.status200.Checked = true;
             this.status200.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.status200.Location = new System.Drawing.Point(891, 63);
+            this.status200.Location = new System.Drawing.Point(942, 62);
             this.status200.Name = "status200";
             this.status200.Size = new System.Drawing.Size(97, 22);
             this.status200.TabIndex = 15;
@@ -243,7 +288,7 @@
             this.JSP_box.AutoSize = true;
             this.JSP_box.Checked = true;
             this.JSP_box.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.JSP_box.Location = new System.Drawing.Point(619, 118);
+            this.JSP_box.Location = new System.Drawing.Point(587, 118);
             this.JSP_box.Name = "JSP_box";
             this.JSP_box.Size = new System.Drawing.Size(70, 22);
             this.JSP_box.TabIndex = 14;
@@ -255,7 +300,7 @@
             this.PHP_box.AutoSize = true;
             this.PHP_box.Checked = true;
             this.PHP_box.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.PHP_box.Location = new System.Drawing.Point(619, 90);
+            this.PHP_box.Location = new System.Drawing.Point(587, 88);
             this.PHP_box.Name = "PHP_box";
             this.PHP_box.Size = new System.Drawing.Size(70, 22);
             this.PHP_box.TabIndex = 13;
@@ -267,7 +312,7 @@
             this.ASPX_box.AutoSize = true;
             this.ASPX_box.Checked = true;
             this.ASPX_box.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ASPX_box.Location = new System.Drawing.Point(619, 62);
+            this.ASPX_box.Location = new System.Drawing.Point(587, 60);
             this.ASPX_box.Name = "ASPX_box";
             this.ASPX_box.Size = new System.Drawing.Size(79, 22);
             this.ASPX_box.TabIndex = 12;
@@ -531,47 +576,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "域名:";
             // 
-            // ID
+            // custom_dic
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ID.FillWeight = 44.85837F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Address
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Address.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Address.FillWeight = 291.5779F;
-            this.Address.HeaderText = "地址";
-            this.Address.MinimumWidth = 8;
-            this.Address.Name = "Address";
-            this.Address.ReadOnly = true;
-            this.Address.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // HTTP_STATUS
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.HTTP_STATUS.DefaultCellStyle = dataGridViewCellStyle5;
-            this.HTTP_STATUS.FillWeight = 45.45454F;
-            this.HTTP_STATUS.HeaderText = "HTTP响应";
-            this.HTTP_STATUS.MaxInputLength = 4;
-            this.HTTP_STATUS.MinimumWidth = 8;
-            this.HTTP_STATUS.Name = "HTTP_STATUS";
-            this.HTTP_STATUS.ReadOnly = true;
-            this.HTTP_STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 18.10924F;
-            this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.custom_dic.AutoSize = true;
+            this.custom_dic.Checked = true;
+            this.custom_dic.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.custom_dic.Location = new System.Drawing.Point(762, 63);
+            this.custom_dic.Name = "custom_dic";
+            this.custom_dic.Size = new System.Drawing.Size(97, 22);
+            this.custom_dic.TabIndex = 18;
+            this.custom_dic.Text = "CUSTOM:";
+            this.custom_dic.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -624,6 +639,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn HTTP_STATUS;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.CheckBox custom_dic;
     }
 }
 

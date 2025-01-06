@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\.Net\\2024\\Yujian\\",
+  "WorkspaceRootPath": "E:\\GitHub Items\\Yujian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|e:\\.net\\2024\\yujian\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|E:\\GitHub Items\\Yujian\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|E:\\.Net\\2024\\Yujian\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|e:\\github items\\yujian\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A852D-E668-43B3-B11B-B3B16F21F084}|Yujian.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "E:\\.Net\\2024\\Yujian\\MainForm.cs",
+              "DocumentMoniker": "E:\\GitHub Items\\Yujian\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "E:\\.Net\\2024\\Yujian\\MainForm.cs",
+              "ToolTip": "E:\\GitHub Items\\Yujian\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAswG4AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwvz8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T15:10:57.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "E:\\.Net\\2024\\Yujian\\MainForm.cs",
+              "DocumentMoniker": "E:\\GitHub Items\\Yujian\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "E:\\.Net\\2024\\Yujian\\MainForm.cs [\u8BBE\u8BA1]",
+              "ToolTip": "E:\\GitHub Items\\Yujian\\MainForm.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "MainForm.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:23:26.265Z"
+              "WhenOpened": "2024-12-14T12:23:26.265Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             }
           ]
         }
